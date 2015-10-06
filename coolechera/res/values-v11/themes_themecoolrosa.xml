@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Generated with http://android-holo-colors.com -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <style name="ThemeCoolRosa" parent="@style/_ThemeCoolRosa"/>
+
+  <style name="_ThemeCoolRosa" parent="Theme.AppCompat.Light">
+
+    <item name="android:editTextBackground">@drawable/themecoolrosa_edit_text_holo_light</item>
+
+    <item name="android:textColorHighlight">#99ffacb1</item>
+    <item name="android:textSelectHandleLeft">@drawable/themecoolrosa_text_select_handle_left</item>
+    <item name="android:textSelectHandleRight">@drawable/themecoolrosa_text_select_handle_right</item>
+    <item name="android:textSelectHandle">@drawable/themecoolrosa_text_select_handle_middle</item>
+
+    <item name="android:autoCompleteTextViewStyle">@style/AutoCompleteTextViewThemeCoolRosa</item>
+
+    <item name="android:listChoiceIndicatorMultiple">@drawable/themecoolrosa_btn_check_holo_light</item>
+
+    <item name="android:listChoiceIndicatorSingle">@drawable/themecoolrosa_btn_radio_holo_light</item>
+
+    <item name="android:buttonStyle">@style/ButtonThemeCoolRosa</item>
+
+    <item name="android:imageButtonStyle">@style/ImageButtonThemeCoolRosa</item>
+
+    <item name="android:dropDownSpinnerStyle">@style/SpinnerThemeCoolRosa</item>
+
+    <item name="android:progressBarStyleHorizontal">@style/ProgressBarThemeCoolRosa</item>
+
+    <item name="android:seekBarStyle">@style/SeekBarThemeCoolRosa</item>
+
+    <item name="android:ratingBarStyle">@style/RatingBarThemeCoolRosa</item>
+
+    <item name="android:ratingBarStyleIndicator">@style/RatingBarBigThemeCoolRosa</item>
+
+    <item name="android:ratingBarStyleSmall">@style/RatingBarSmallThemeCoolRosa</item>
+
+    <item name="android:buttonStyleToggle">@style/ToggleThemeCoolRosa</item>
+
+    <item name="android:listChoiceBackgroundIndicator">@drawable/themecoolrosa_list_selector_holo_light</item>
+
+    <item name="android:activatedBackgroundIndicator">@drawable/themecoolrosa_activated_background_holo_light</item>
+
+    <item name="android:fastScrollThumbDrawable">@drawable/themecoolrosa_fastscroll_thumb_holo</item>
+
+  </style>
+
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Generated with http://android-holo-colors.com -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <style name="ThemeCoolechera" parent="@style/_ThemeCoolechera"/>
+
+  <style name="_ThemeCoolechera" parent="Theme.AppCompat.Light">
+
+    <item name="android:editTextStyle">@style/EditTextThemeCoolechera</item>
+
+    <item name="android:textColorHighlight">#99ff0000</item>
+
+    <item name="android:autoCompleteTextViewStyle">@style/AutoCompleteTextViewThemeCoolechera</item>
+
+    <item name="android:checkboxStyle">@style/CheckBoxThemeCoolechera</item>
+
+    <item name="android:radioButtonStyle">@style/RadioButtonThemeCoolechera</item>
+
+    <item name="android:buttonStyle">@style/ButtonThemeCoolechera</item>
+
+    <item name="android:imageButtonStyle">@style/ImageButtonThemeCoolechera</item>
+
+    <item name="android:spinnerStyle">@style/SpinnerThemeCoolechera</item>
+
+    <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItemThemeCoolechera</item>
+
+    <item name="android:progressBarStyleHorizontal">@style/ProgressBarThemeCoolechera</item>
+
+    <item name="android:seekBarStyle">@style/SeekBarThemeCoolechera</item>
+
+    <item name="android:ratingBarStyle">@style/RatingBarThemeCoolechera</item>
+
+    <item name="android:ratingBarStyleIndicator">@style/RatingBarBigThemeCoolechera</item>
+
+    <item name="android:ratingBarStyleSmall">@style/RatingBarSmallThemeCoolechera</item>
+
+    <item name="android:buttonStyleToggle">@style/ToggleThemeCoolechera</item>
+
+    <item name="android:listViewStyle">@style/ListViewThemeCoolechera</item>
+
+    <item name="android:listViewWhiteStyle">@style/ListViewThemeCoolechera.White</item>
+
+    <item name="android:spinnerItemStyle">@style/SpinnerItemThemeCoolechera</item>
+
+  </style>
+
+</resources>

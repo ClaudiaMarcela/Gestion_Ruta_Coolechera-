@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="venta">Venta</string>
+    <string name="cambio">Cambio</string>
+    <string name="app_name">Coolechera</string>
+    <string name="hello_world"></string>
+    <string name="action_settings">Salir</string>
+    <string name="action_Cencelar">Cancelar Venta</string>
+    <string name="action_Terminar">Terminar Venta</string>
+    <string name="action_No_Compra">No Compra</string>
+    <string name="action_Modificar">Modificar venta</string>
+    <string name="cabecera">header</string>
+    <string name="piePagina">footer</string>
+    <string name="usuario">usuario:</string>
+    <string name="user">user</string>
+    <string name="password">contraseña:</string>
+    <string name="pass">xxxx</string>
+    <string name="login">ingresar</string>
+    <string name="title_activity_princial">Coolechera</string>
+    <string name="title_activity_iniciar_dia">Iniciar Dia</string>
+    <string name="title_activity_enviar_info">Enviar Informacion</string>
+    <string name="title_section1">Dia de trabajo</string>
+    <string name="title_section2">Sincronizacion</string>
+    <string name="title_section3">Mensajes</string>
+    <string name="title_tab_1">Info. Cliente</string>
+    <string name="title_tab_2">Referencias</string>
+    <string name="title_tab_3">Info. Pedido</string>
+    <string name="title_tab_4">Info. Cambios</string>
+    <string name="title_tab_1_estadisticas">Resumen Recorrido</string>
+    <string name="title_tab_2_estadisticas">Pedidos Sin Sincronizar</string>
+    <string name="title_tab_3_estadisticas">Pedidos Realizados</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="info_vendedor">Info. App</string>
+    <string name="parametros_busqueda">Codigo/Razon</string>
+    <string name="section_label_info_cliente">Informacion del cliente al cual se le realizara la actual venta</string>
+    <string name="section_label_info_venta"><b>Informacion de estado de venta actual</b></string>
+    <string name="section_label_info_no_compra"><b>DEFINIR NO COMPRA</b></string>
+    <string name="label_r_legal">R. Legal:</string>
+    <string name="label_nit">NIT:</string>
+    <string name="label_direccion">Direccion:</string>
+    <string name="label_barrio">Barrio:</string>
+    <string name="label_telefono">Telefono:</string>
+    <string name="label_codigo">Codigo:</string>
+    <string name="label_precio">Precio:</string>
+    <string name="label_iva">IVA:</string>
+    <string name="label_cantidad_unidades">Cantidad de unidades:</string>
+    <string name="label_cancelar">Cancelar</string>
+    <string name="label_insertar">Insertar</string>
+    <string name="label_Valor">Valor:</string>
+    <string name="label_Total">Total:</string>
+
+    <!-- Informacion para estadisticas -->
+    <string name="label_cedula_vendedor">Cedula:</string>
+    <string name="label_codigo_vendedor">Codigo:</string>
+    <string name="label_fecha_labores_vendedor">F. Labores:</string>
+    <string name="label_zona_vendedor">Zona:</string>
+    <string name="label_visitas">Visitas:</string>
+    <string name="label_total_pedido">Total Pedidos:</string>
+    <string name="label_pedidos_sincronizados">Pedidos Sincronizados:</string>
+    <string name="label_pedidos_no_sincronizados">Pedidos No Sincronizados:</string>
+    <string name="label_no_compras">No Compras:</string>
+    <string name="label_no_compras_sincronizados">No Compras Sincronizados:</string>
+    <string name="label_no_compras_no_sincronizados">No Compras No Sincronizados:</string>
+    <string name="label_pedidos">Pedidos No Sinc:</string>
+    <string name="label_pedidos_sinc">Pedidos Sinc:</string>
+    <string name="label_efectividad"><b>Efectividad:</b></string>
+    <string name="label_total_venta">Total ventas:</string>
+    <string name="section_label_resumen_estadisticas"><b>Resumen Estadistico del Dia</b></string>
+    <string name="section_label_pedido_no_sincronizado"><b>Resumen Pedido No Sincronizado</b></string>
+    <string name="section_label_pedido_sincronizado"><b>Resumen Pedido Sincronizado</b></string>
+    <string name="section_label_lista_pedidos_no_sincronizado"><b>Lista Pedidos No Sincronizados</b></string>
+    <string name="section_label_lista_pedidos_sincronizado"><b>Lista Pedidos Sincronizados</b></string>
+
+    <!-- Lista de titulos de navegacion -->
+    <string-array name="navigation_options">
+        <item>Dia de trabajo</item>
+        <item>Sincronizacion</item>
+    </string-array>
+    <!-- Lista de iconos de navegacion debe coincidir con las posicion de navogation_options -->
+    <array name="navigation_icons">
+        <item>@drawable/ic_trabajo</item>
+        <item>@drawable/ic_sincronizacion</item>
+        <item>@drawable/themecoolechera_btn_rating_star_on_focused_holo_light</item>
+    </array>
+
+    <string-array name="sincronizacion_options">
+        <item>Enviar pedidos</item>
+        <item>Iniciar dia</item>
+        <item>Terminar dia</item>
+    </string-array>
+    <string-array name="sincronizacion_subOptions">
+        <item>Confirmar pedidos realizados hasta ahora</item>
+        <item>Descargar la ruta y tareas del dia</item>
+        <item>Finalizar la jornada de trabajo</item>
+    </string-array>
+
+    <string name="titulo_sincronizacion">Sincronizacion de informacion.\nEstas opciones enviaran informacion a la web</string>
+    <string name="titulo_diaTrabajo">Realizar ventas, buscar clientes, Analisis de ventas</string>
+
+    <array name="sincronizacion_icons">
+        <item>@drawable/ic_social_send_now_red</item>
+        <item>@drawable/ic_social_send_now_red</item>
+        <item>@drawable/ic_social_send_now_red</item>
+    </array>
+
+    <string-array name="trabajo_options">
+        <item>Buscar clientes</item>
+        <item>Rutero</item>
+        <item>Estadisticas</item>
+    </string-array>
+    <string-array name="trabajo_subOptions">
+        <item>Buscar clientes por un atributo conocido como codigo o nombre</item>
+        <item>Conocer la lista de clientes para visitar en el dia</item>
+        <item>Analisis de ventas y comportamiento del dia</item>
+    </string-array>
+
+    <!-- iconos para lista de opciones en dia de trabajo -->
+    <array name="trabajo_icons">
+        <item>@drawable/ic_clientes</item>
+        <item>@drawable/ic_rutero</item>
+        <item>@drawable/ic_estadisticas</item>
+    </array>
+
+    <!-- icono para clientes -->
+    <array name="buscarClientes_icons">
+        <item>@drawable/ic_social_person_red</item>
+    </array>
+
+    <string name="title_activity_ventas">Ventas Coolechera</string>
+    <string name="title_activity_rutero">Rutero Coolechera</string>
+
+    <!-- Opciones para la frecuencia de rutero. -->
+    <array name="frecuencia_ruta">
+        <item>Lunes - Jueves (12)</item>
+        <item>Martes - Viernes (22)</item>
+        <item>Miercoles - Sabado (32)</item>
+    </array>
+
+</resources>

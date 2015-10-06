@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Generated with http://android-holo-colors.com -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <style name="ThemeCoolechera" parent="@style/_ThemeCoolechera"/>
+
+  <style name="_ThemeCoolechera" parent="Theme.AppCompat.Light">
+
+    <item name="android:editTextBackground">@drawable/themecoolechera_edit_text_holo_light</item>
+
+    <item name="android:textColorHighlight">#99ff0000</item>
+    <item name="android:textSelectHandleLeft">@drawable/themecoolechera_text_select_handle_left</item>
+    <item name="android:textSelectHandleRight">@drawable/themecoolechera_text_select_handle_right</item>
+    <item name="android:textSelectHandle">@drawable/themecoolechera_text_select_handle_middle</item>
+
+    <item name="android:autoCompleteTextViewStyle">@style/AutoCompleteTextViewThemeCoolechera</item>
+
+    <item name="android:listChoiceIndicatorMultiple">@drawable/themecoolechera_btn_check_holo_light</item>
+
+    <item name="android:listChoiceIndicatorSingle">@drawable/themecoolechera_btn_radio_holo_light</item>
+
+    <item name="android:buttonStyle">@style/ButtonThemeCoolechera</item>
+
+    <item name="android:imageButtonStyle">@style/ImageButtonThemeCoolechera</item>
+
+    <item name="android:dropDownSpinnerStyle">@style/SpinnerThemeCoolechera</item>
+
+    <item name="android:progressBarStyleHorizontal">@style/ProgressBarThemeCoolechera</item>
+
+    <item name="android:seekBarStyle">@style/SeekBarThemeCoolechera</item>
+
+    <item name="android:ratingBarStyle">@style/RatingBarThemeCoolechera</item>
+
+    <item name="android:ratingBarStyleIndicator">@style/RatingBarBigThemeCoolechera</item>
+
+    <item name="android:ratingBarStyleSmall">@style/RatingBarSmallThemeCoolechera</item>
+
+    <item name="android:buttonStyleToggle">@style/ToggleThemeCoolechera</item>
+
+    <item name="android:listChoiceBackgroundIndicator">@drawable/themecoolechera_list_selector_holo_light</item>
+
+    <item name="android:activatedBackgroundIndicator">@drawable/themecoolechera_activated_background_holo_light</item>
+
+    <item name="android:fastScrollThumbDrawable">@drawable/themecoolechera_fastscroll_thumb_holo</item>
+
+  </style>
+
+</resources>

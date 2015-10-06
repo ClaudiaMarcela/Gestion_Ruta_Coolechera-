@@ -1,0 +1,127 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.android.coolechera.RuteroActivity" >
+
+    <View
+        android:id="@+id/viewLineaSuperior"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_marginTop="7dp"
+        android:background="#ff4444" />
+
+    <TextView
+        android:id="@+id/section_label_info_no_sincronizado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewLineaSuperior"
+        android:layout_marginTop="7dp"
+        android:gravity="center"
+        android:text="@string/section_label_pedido_no_sincronizado" />
+
+    <TableLayout
+        android:id="@+id/tableLayoutInfoCliente"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/section_label_info_no_sincronizado"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:weightSum="1" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="start"
+                android:text="@string/label_visitas" />
+
+            <TextView
+                android:id="@+id/textViewVisitasNoSincronizado"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="start"
+                android:textAppearance="?android:attr/textAppearanceSearchResultSubtitle" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:weightSum="1" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="start"
+                android:text="@string/label_pedidos" />
+
+            <TextView
+                android:id="@+id/textViewPedidosNoSincronizado"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="start"
+                android:textAppearance="?android:attr/textAppearanceSearchResultSubtitle" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:weightSum="1" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="start"
+                android:text="@string/label_Valor" />
+
+            <TextView
+                android:id="@+id/textViewValorNoSincronizado"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="start"
+                android:textAppearance="?android:attr/textAppearanceSearchResultSubtitle" />
+        </TableRow>
+    </TableLayout>
+
+    <View
+        android:id="@+id/viewLineaMedia"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_below="@id/tableLayoutInfoCliente"
+        android:layout_marginTop="5dp"
+        android:background="#ff4444" />
+
+    <TextView
+        android:id="@+id/section_label_info_pedido_no_sincronizado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewLineaMedia"
+        android:layout_marginTop="7dp"
+        android:gravity="center"
+        android:text="@string/section_label_lista_pedidos_no_sincronizado" />
+
+    <ListView
+        android:id="@+id/listaPedidosNoSincronizados"
+        style="@style/ListViewThemeCoolRosa"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/section_label_info_pedido_no_sincronizado"
+        android:layout_marginTop="7dp" />
+
+</RelativeLayout>

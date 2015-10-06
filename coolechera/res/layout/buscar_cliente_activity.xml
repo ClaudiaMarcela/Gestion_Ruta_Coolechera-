@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.android.coolechera"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textViewInfoBuscarCiente"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="@string/info_buscar_cliente" />
+
+    <SearchView
+        android:id="@+id/searchViewBuscarCliente"
+        style="@style/EditTextThemeCoolechera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewInfoBuscarCiente"
+        android:layout_marginBottom="20dp"
+        android:iconifiedByDefault="true"
+        android:keepScreenOn="true"
+        android:queryHint="@string/buscar_cliente" >
+    </SearchView>
+
+    <android.support.v7.widget.SearchView
+        android:id="@+id/searchViewBuscarClientes"
+        style="@style/EditTextThemeCoolechera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewInfoBuscarCiente"
+        android:layout_marginBottom="20dp"
+        android:keepScreenOn="true"
+        android:visibility="gone"
+        app:iconifiedByDefault="true"
+        app:queryHint="@string/buscar_cliente" />
+
+    <ListView
+        android:id="@+id/listaClientesEncontrados"
+        style="@style/ListViewThemeCoolechera"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/searchViewBuscarCliente"
+        android:layout_margin="10dp" >
+    </ListView>
+
+</RelativeLayout>

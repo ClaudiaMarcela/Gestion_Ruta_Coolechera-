@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/enviarInfo_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLargeInverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/enviarInfo_status_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="@string/enviando_progress_dia"
+            android:textAppearance="?android:attr/textAppearanceSearchResultSubtitle" />
+    </LinearLayout>
+
+    <!-- confirmacion para enviar -->
+
+    <ScrollView
+        android:id="@+id/enviarInfo_confirmation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/imageButton_enviar_confirmation"
+                style="@style/ButtonThemeCoolRosa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@null"
+                android:contentDescription="@string/abc_action_bar_home_description"
+                android:src="@drawable/ic_social_forward" />
+
+            <TextView
+                android:id="@+id/textTituloEnviarInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageButton_enviar_confirmation"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:text="@string/desea_enviar_info"
+                android:textAppearance="?android:attr/textAppearanceSearchResultSubtitle" />
+
+            <TextView
+                android:id="@+id/enviarInfo_message_confirmation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textTituloEnviarInfo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceSearchResultSubtitle" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <!-- envio OK -->
+
+    <ScrollView
+        android:id="@+id/enviarInfo_done_ok"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/imageButton_enviar_ok"
+                style="@style/ImageButtonThemeCoolechera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@null"
+                android:contentDescription="@string/abc_action_bar_home_description"
+                android:src="@drawable/ic_navigation_accept_red" />
+
+            <TextView
+                android:id="@+id/textTituloEnviarInfo_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageButton_enviar_ok"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:text="@string/enviar_info_ok"
+                android:textAppearance="?android:attr/textAppearanceSearchResultSubtitle" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <!-- envio error -->
+
+    <ScrollView
+        android:id="@+id/enviarInfo_done_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/imageButton_enviar_error"
+                style="@style/ImageButtonThemeCoolechera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@null"
+                android:contentDescription="@string/abc_action_bar_home_description"
+                android:src="@drawable/ic_navigation_cancel_red" />
+
+            <TextView
+                android:id="@+id/textTituloEnviarInfo_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageButton_enviar_error"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:text="@string/enviar_info_error"
+                android:textAppearance="?android:attr/textAppearanceSearchResultSubtitle" />
+
+            <TextView
+                android:id="@+id/enviarInfo_message_done_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textTituloEnviarInfo_error"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceSearchResultSubtitle" />
+        </RelativeLayout>
+    </ScrollView>
+
+</merge>

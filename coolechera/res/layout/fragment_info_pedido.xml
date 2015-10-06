@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res/com.android.coolechera"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.android.coolechera.VentasActivity" >
+
+    <TextView
+        android:id="@+id/section_label_buscarProductoPedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="@string/info_buscar_producto_pedido" />
+
+    <android.support.v7.widget.SearchView
+        android:id="@+id/searchViewBuscarProductoPedido"
+        style="@style/EditTextThemeCoolechera"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/section_label_buscarProductoPedido"
+        android:layout_marginBottom="5dp"
+        android:keepScreenOn="true"
+        app:iconifiedByDefault="true"
+        app:queryHint="@string/buscar_producto" />
+
+    <ListView
+        android:id="@+id/listaProductosPedidos"
+        style="@style/ListViewThemeCoolRosa"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchViewBuscarProductoPedido" />
+
+</RelativeLayout>

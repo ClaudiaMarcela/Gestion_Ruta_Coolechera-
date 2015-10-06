@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textViewDialogDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textColor="#09c" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutPrecio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewDialogDescripcion"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:gravity="right"
+            android:text="@string/label_precio" />
+
+        <TextView
+            android:id="@+id/textViewDialogPrecio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSearchResultSubtitle" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutIva"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayoutPrecio"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:gravity="right"
+            android:text="@string/label_iva" />
+
+        <TextView
+            android:id="@+id/textViewDialogIva"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSearchResultSubtitle" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewLine1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_below="@id/linearLayoutIva"
+        android:layout_marginTop="5dp"
+        android:background="#ff4444" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupVenta"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewLine1"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <RadioButton
+            android:id="@+id/radioButtonVenta"
+            style="@style/RadioButtonThemeCoolechera"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.5"
+            android:checked="true"
+            android:text="@string/venta" />
+
+        <RadioButton
+            android:id="@+id/radioButtonCambio"
+            style="@style/RadioButtonThemeCoolechera"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="@string/cambio" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutCantidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroupVenta"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <TextView
+            android:id="@+id/textViewDialogCantidad"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="bottom|right"
+            android:text="@string/label_cantidad_unidades"
+            android:textAppearance="?android:attr/textAppearanceSearchResultSubtitle" />
+
+        <EditText
+            android:id="@+id/editTextCantidadDialog"
+            style="@style/EditTextThemeCoolechera"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="0.5"
+            android:ems="10"
+            android:inputType="phone"
+            android:maxLength="3" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayoutCantidad"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <Button
+            android:id="@+id/buttonSalirDialog"
+            style="@style/ButtonThemeCoolRosa"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.5"
+            android:drawableLeft="@drawable/ic_navigation_previous_item_red"
+            android:text="@string/label_cancelar" />
+
+        <Button
+            android:id="@+id/buttonAceptarDialog"
+            style="@style/ButtonThemeCoolRosa"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:drawableRight="@drawable/ic_navigation_next_item"
+            android:text="@string/label_insertar" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Generated with http://android-holo-colors.com -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <style name="ThemeCoolRosa" parent="@style/_ThemeCoolRosa"/>
+
+  <style name="_ThemeCoolRosa" parent="Theme.AppCompat.Light">
+
+    <item name="android:editTextStyle">@style/EditTextThemeCoolRosa</item>
+
+    <item name="android:textColorHighlight">#99ffacb1</item>
+
+    <item name="android:autoCompleteTextViewStyle">@style/AutoCompleteTextViewThemeCoolRosa</item>
+
+    <item name="android:checkboxStyle">@style/CheckBoxThemeCoolRosa</item>
+
+    <item name="android:radioButtonStyle">@style/RadioButtonThemeCoolRosa</item>
+
+    <item name="android:buttonStyle">@style/ButtonThemeCoolRosa</item>
+
+    <item name="android:imageButtonStyle">@style/ImageButtonThemeCoolRosa</item>
+
+    <item name="android:spinnerStyle">@style/SpinnerThemeCoolRosa</item>
+
+    <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItemThemeCoolRosa</item>
+
+    <item name="android:progressBarStyleHorizontal">@style/ProgressBarThemeCoolRosa</item>
+
+    <item name="android:seekBarStyle">@style/SeekBarThemeCoolRosa</item>
+
+    <item name="android:ratingBarStyle">@style/RatingBarThemeCoolRosa</item>
+
+    <item name="android:ratingBarStyleIndicator">@style/RatingBarBigThemeCoolRosa</item>
+
+    <item name="android:ratingBarStyleSmall">@style/RatingBarSmallThemeCoolRosa</item>
+
+    <item name="android:buttonStyleToggle">@style/ToggleThemeCoolRosa</item>
+
+    <item name="android:listViewStyle">@style/ListViewThemeCoolRosa</item>
+
+    <item name="android:listViewWhiteStyle">@style/ListViewThemeCoolRosa.White</item>
+
+    <item name="android:spinnerItemStyle">@style/SpinnerItemThemeCoolRosa</item>
+
+  </style>
+
+</resources>

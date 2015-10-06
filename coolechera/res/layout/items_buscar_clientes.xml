@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ThemeCoolechera"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/imageViewIconoSincronizacionBuscarCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dp"
+        android:contentDescription="@string/action_example" />
+
+    <TextView
+        android:id="@+id/textViewTituloBuscarCliente"
+        style="@style/ThemeCoolechera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/imageViewIconoSincronizacionBuscarCliente"
+        android:gravity="start"
+        android:paddingTop="10dp"
+        android:textAppearance="?android:attr/textAppearanceSearchResultSubtitle"
+        android:textColor="#09c"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textViewSubTituloBuscarCliente"
+        style="@style/ThemeCoolechera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTituloBuscarCliente"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@id/imageViewIconoSincronizacionBuscarCliente"
+        android:paddingTop="10dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="12sp"
+        android:textStyle="italic" />
+
+    <ImageView
+        android:id="@+id/imageViewSiguienteBuscarCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/imageViewIconoSincronizacionBuscarCliente"
+        android:layout_margin="5dp"
+        android:contentDescription="@string/action_example"
+        android:src="@drawable/ic_navigation_next_item" />
+
+</RelativeLayout>

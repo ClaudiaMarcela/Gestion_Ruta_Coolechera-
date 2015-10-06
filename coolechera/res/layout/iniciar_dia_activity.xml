@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.coolechera.IniciarDiaActivity" >
+
+    <!-- Iniciando progress -->
+
+    <LinearLayout
+        android:id="@+id/iniciandoDia_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/iniciando_status_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="@string/iniciando_progress_dia"
+            android:textAppearance="?android:attr/textAppearanceSearchResultSubtitle" />
+    </LinearLayout>
+
+    <!-- done Ok -->
+
+    <ScrollView
+        android:id="@+id/iniciando_done_ok"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/imageButton_iniciar_dia_ok"
+                style="@style/ButtonThemeCoolRosa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@null"
+                android:contentDescription="@string/abc_action_bar_home_description"
+                android:src="@drawable/ic_rating_good" />
+
+            <TextView
+                android:id="@+id/textTituloIniciarDia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageButton_iniciar_dia_ok"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="15dp"
+                android:text="@string/inicio_dia_correcto"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/iniciando_message_done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textTituloIniciarDia"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceSearchResultSubtitle" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <!-- done ERROR -->
+
+    <ScrollView
+        android:id="@+id/iniciando_done_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/imageButton_iniciar_dia_error"
+                style="@style/ButtonThemeCoolRosa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@null"
+                android:contentDescription="@string/abc_action_bar_home_description"
+                android:src="@drawable/ic_content_remove" />
+
+            <TextView
+                android:id="@+id/textTituloIniciarDiaError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageButton_iniciar_dia_error"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:text="@string/inicio_dia_error"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/iniciando_message_done_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textTituloIniciarDiaError"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceSearchResultSubtitle" />
+        </RelativeLayout>
+    </ScrollView>
+
+</merge>

@@ -1,0 +1,34 @@
+<resources>
+
+    <string name="title_activity_login">Login</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Usuario</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in_register"><b>Login</b></string>
+    <string name="action_sign_in_short">Login</string>
+    <string name="action_forgot_password">Salir</string>
+    <string name="login_progress_signing_in">Ingresando&#8230;</string>
+    <string name="iniciando_progress_dia">Iniciando dia&#8230;</string>
+    <string name="enviando_progress_dia">Enviando&#8230;</string>
+    <string name="inicio_dia_correcto">Datos Descargados correctamente!</string>
+    <string name="desea_enviar_info">Se han encontrado pedidos sin enviar!\n\nToque la imagen para enviarlos.</string>
+    <string name="enviar_info_ok">Envio realizado correctamente!\n\nToque la imagen para salir.</string>
+    <string name="inicio_dia_error">No se logro iniciar dia!\nToque la cruz para intentar nuevamente.</string>
+    <string name="enviar_info_error">No se logro enviar informacion!\nToque la cruz para intentar nuevamente.</string>
+    <string name="inicio_dia_terminar">Toque la imagen para terminar.</string>
+    <string name="error_invalid_email">El usuario no es valido</string>
+    <string name="buscar_cliente"><b>Codigo/Razon Social</b></string>
+    <string name="buscar_producto"><b>Codigo/Descripcion</b></string>
+    <string name="error_invalid_password">El password es muy corto</string>
+    <string name="error_incorrect_password">El password no es correcto</string>
+    <string name="info_buscar_cliente">Toque la imagen para iniciar la busqueda.\nPuede buscar por codigo o razon social</string>
+    <string name="info_buscar_producto">Toque la imagen para iniciar la busqueda.\nPuede buscar por codigo o descripcion</string>
+    <string name="info_rutero"><b>Clientes definidos por rutero</b></string>
+    <string name="info_buscar_producto_pedido"><b>Puede modificar o eliminar algun producto de la lista</b></string>
+    <string name="error_incorrect_password_or_user">El usuario o el password no es correcto</string>
+    <string name="error_field_required">Este campo es requerido</string>
+    <string name="notNetwork">No hay acceso a internet!\nPor favor verifique su conexion a internet.</string>
+    <string name="notBD">No se encuentra Base de Datos local!\nPor Favor inicie dia.</string>
+
+</resources>

@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="GestionRutasModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="04Clientes">
+          <Key>
+            <PropertyRef Name="clienteKey" />
+          </Key>
+          <Property Name="CODIGO" Type="nvarchar" MaxLength="255" />
+          <Property Name="RAZONSOCI" Type="nvarchar" MaxLength="255" />
+          <Property Name="REPRESENTA" Type="nvarchar" MaxLength="255" />
+          <Property Name="DIRECCION" Type="nvarchar" MaxLength="255" />
+          <Property Name="TELEFONOS" Type="nvarchar" MaxLength="30" />
+          <Property Name="NIT" Type="nvarchar" MaxLength="30" />
+          <Property Name="ZONA" Type="nvarchar" MaxLength="255" />
+          <Property Name="VENDEDOR" Type="nvarchar" MaxLength="10" />
+          <Property Name="BARRIO" Type="nvarchar" MaxLength="255" />
+          <Property Name="Limite" Type="nvarchar" MaxLength="3" />
+          <Property Name="Dias" Type="nvarchar" MaxLength="25" />
+          <Property Name="ListaPrecios" Type="int" />
+          <Property Name="Entregador" Type="nvarchar" MaxLength="30" />
+          <Property Name="POP" Type="nvarchar" MaxLength="2" />
+          <Property Name="MARCAS" Type="int" />
+          <Property Name="CANAL" Type="varchar" MaxLength="2" />
+          <Property Name="COMPANIA" Type="varchar" MaxLength="2" />
+          <Property Name="clienteKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="latitud" Type="float" />
+          <Property Name="longitud" Type="float" />
+        </EntityType>
+        <EntityType Name="04VENDEDORES">
+          <Key>
+            <PropertyRef Name="vendedorKey" />
+          </Key>
+          <Property Name="vendedorKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Codigo" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="Nombre" Type="varchar" MaxLength="255" />
+          <Property Name="Dir" Type="varchar" MaxLength="255" />
+          <Property Name="Telefono" Type="varchar" MaxLength="255" />
+          <Property Name="Ciudad" Type="char" MaxLength="10" />
+          <Property Name="Zona" Type="varchar" MaxLength="255" />
+          <Property Name="est_vere" Type="char" MaxLength="10" />
+          <Property Name="Consecutivo" Type="int" />
+          <Property Name="gps" Type="int" />
+          <Property Name="cedula" Type="varchar" MaxLength="255" />
+          <Property Name="bodega" Type="nchar" MaxLength="2" />
+          <Property Name="usuario" Type="varchar" MaxLength="10" />
+          <Property Name="password" Type="nvarchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="CoordenadaSeguimiento">
+          <Key>
+            <PropertyRef Name="seguimientoKey" />
+          </Key>
+          <Property Name="seguimientoKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="latitud" Type="float" />
+          <Property Name="longitud" Type="float" />
+          <Property Name="fechaMovil" Type="datetime" />
+          <Property Name="hora" Type="int" />
+          <Property Name="minuto" Type="int" />
+          <Property Name="consecutivoMovil" Type="int" />
+          <Property Name="vendedor" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="CoordenadasVentas">
+          <Key>
+            <PropertyRef Name="ventasKey" />
+          </Key>
+          <Property Name="ventasKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="latitud" Type="float" />
+          <Property Name="longitud" Type="float" />
+          <Property Name="fechaMovil" Type="datetime" />
+          <Property Name="hora" Type="int" />
+          <Property Name="minuto" Type="int" />
+          <Property Name="vendedor" Type="varchar" MaxLength="255" />
+          <Property Name="cliente" Type="nvarchar" MaxLength="255" />
+          <Property Name="consecutivoMovil" Type="int" />
+        </EntityType>
+        <EntityType Name="VentanaHoraria">
+          <Key>
+            <PropertyRef Name="ventanaHorariaKey" />
+          </Key>
+          <Property Name="ventanaHorariaKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="fechaServidor" Type="datetime" />
+          <Property Name="fechaInicio" Type="datetime" />
+          <Property Name="fechaFin" Type="datetime" />
+          <Property Name="horaInicio" Type="int" />
+          <Property Name="minutoInicio" Type="int" />
+          <Property Name="horaFin" Type="int" />
+          <Property Name="minutoFin" Type="int" />
+          <Property Name="vendedor" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <EntityContainer Name="GestionRutasModelStoreContainer">
+          <EntitySet Name="04Clientes" EntityType="Self.04Clientes" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="04VENDEDORES" EntityType="Self.04VENDEDORES" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CoordenadaSeguimiento" EntityType="Self.CoordenadaSeguimiento" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CoordenadasVentas" EntityType="Self.CoordenadasVentas" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="VentanaHoraria" EntityType="Self.VentanaHoraria" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="GestionRutasModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="C04Clientes">
+          <Key>
+            <PropertyRef Name="clienteKey" />
+          </Key>
+          <Property Name="CODIGO" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="RAZONSOCI" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="REPRESENTA" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="DIRECCION" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="TELEFONOS" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="NIT" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="ZONA" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="VENDEDOR" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="BARRIO" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Limite" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+          <Property Name="Dias" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Name="ListaPrecios" Type="Int32" />
+          <Property Name="Entregador" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="POP" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+          <Property Name="MARCAS" Type="Int32" />
+          <Property Name="CANAL" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="COMPANIA" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="clienteKey" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="latitud" Type="Double" />
+          <Property Name="longitud" Type="Double" />
+        </EntityType>
+        <EntityType Name="C04VENDEDORES">
+          <Key>
+            <PropertyRef Name="vendedorKey" />
+          </Key>
+          <Property Name="vendedorKey" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Codigo" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Nombre" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="Dir" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="Telefono" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="Ciudad" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Name="Zona" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="est_vere" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Name="Consecutivo" Type="Int32" />
+          <Property Name="gps" Type="Int32" />
+          <Property Name="cedula" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="bodega" Type="String" MaxLength="2" FixedLength="true" Unicode="true" />
+          <Property Name="usuario" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="password" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="CoordenadaSeguimiento">
+          <Key>
+            <PropertyRef Name="seguimientoKey" />
+          </Key>
+          <Property Name="seguimientoKey" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="latitud" Type="Double" />
+          <Property Name="longitud" Type="Double" />
+          <Property Name="fechaMovil" Type="DateTime" Precision="3" />
+          <Property Name="hora" Type="Int32" />
+          <Property Name="minuto" Type="Int32" />
+          <Property Name="consecutivoMovil" Type="Int32" />
+          <Property Name="vendedor" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="CoordenadasVenta">
+          <Key>
+            <PropertyRef Name="ventasKey" />
+          </Key>
+          <Property Name="ventasKey" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="latitud" Type="Double" />
+          <Property Name="longitud" Type="Double" />
+          <Property Name="fechaMovil" Type="DateTime" Precision="3" />
+          <Property Name="hora" Type="Int32" />
+          <Property Name="minuto" Type="Int32" />
+          <Property Name="vendedor" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="cliente" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="consecutivoMovil" Type="Int32" />
+        </EntityType>
+        <EntityType Name="VentanaHoraria">
+          <Key>
+            <PropertyRef Name="ventanaHorariaKey" />
+          </Key>
+          <Property Name="ventanaHorariaKey" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="fechaServidor" Type="DateTime" Precision="3" />
+          <Property Name="fechaInicio" Type="DateTime" Precision="3" />
+          <Property Name="fechaFin" Type="DateTime" Precision="3" />
+          <Property Name="horaInicio" Type="Int32" />
+          <Property Name="minutoInicio" Type="Int32" />
+          <Property Name="horaFin" Type="Int32" />
+          <Property Name="minutoFin" Type="Int32" />
+          <Property Name="vendedor" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="CONEXION" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="C04Clientes" EntityType="Self.C04Clientes" />
+          <EntitySet Name="C04VENDEDORES" EntityType="Self.C04VENDEDORES" />
+          <EntitySet Name="CoordenadaSeguimientoes" EntityType="Self.CoordenadaSeguimiento" />
+          <EntitySet Name="CoordenadasVentas" EntityType="Self.CoordenadasVenta" />
+          <EntitySet Name="VentanaHorarias" EntityType="Self.VentanaHoraria" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="GestionRutasModelStoreContainer" CdmEntityContainer="CONEXION">
+          <EntitySetMapping Name="C04Clientes">
+            <EntityTypeMapping TypeName="GestionRutasModel.C04Clientes">
+              <MappingFragment StoreEntitySet="04Clientes">
+                <ScalarProperty Name="CODIGO" ColumnName="CODIGO" />
+                <ScalarProperty Name="RAZONSOCI" ColumnName="RAZONSOCI" />
+                <ScalarProperty Name="REPRESENTA" ColumnName="REPRESENTA" />
+                <ScalarProperty Name="DIRECCION" ColumnName="DIRECCION" />
+                <ScalarProperty Name="TELEFONOS" ColumnName="TELEFONOS" />
+                <ScalarProperty Name="NIT" ColumnName="NIT" />
+                <ScalarProperty Name="ZONA" ColumnName="ZONA" />
+                <ScalarProperty Name="VENDEDOR" ColumnName="VENDEDOR" />
+                <ScalarProperty Name="BARRIO" ColumnName="BARRIO" />
+                <ScalarProperty Name="Limite" ColumnName="Limite" />
+                <ScalarProperty Name="Dias" ColumnName="Dias" />
+                <ScalarProperty Name="ListaPrecios" ColumnName="ListaPrecios" />
+                <ScalarProperty Name="Entregador" ColumnName="Entregador" />
+                <ScalarProperty Name="POP" ColumnName="POP" />
+                <ScalarProperty Name="MARCAS" ColumnName="MARCAS" />
+                <ScalarProperty Name="CANAL" ColumnName="CANAL" />
+                <ScalarProperty Name="COMPANIA" ColumnName="COMPANIA" />
+                <ScalarProperty Name="clienteKey" ColumnName="clienteKey" />
+                <ScalarProperty Name="latitud" ColumnName="latitud" />
+                <ScalarProperty Name="longitud" ColumnName="longitud" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="C04VENDEDORES">
+            <EntityTypeMapping TypeName="GestionRutasModel.C04VENDEDORES">
+              <MappingFragment StoreEntitySet="04VENDEDORES">
+                <ScalarProperty Name="vendedorKey" ColumnName="vendedorKey" />
+                <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Dir" ColumnName="Dir" />
+                <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+                <ScalarProperty Name="Ciudad" ColumnName="Ciudad" />
+                <ScalarProperty Name="Zona" ColumnName="Zona" />
+                <ScalarProperty Name="est_vere" ColumnName="est_vere" />
+                <ScalarProperty Name="Consecutivo" ColumnName="Consecutivo" />
+                <ScalarProperty Name="gps" ColumnName="gps" />
+                <ScalarProperty Name="cedula" ColumnName="cedula" />
+                <ScalarProperty Name="bodega" ColumnName="bodega" />
+                <ScalarProperty Name="usuario" ColumnName="usuario" />
+                <ScalarProperty Name="password" ColumnName="password" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CoordenadaSeguimientoes">
+            <EntityTypeMapping TypeName="GestionRutasModel.CoordenadaSeguimiento">
+              <MappingFragment StoreEntitySet="CoordenadaSeguimiento">
+                <ScalarProperty Name="seguimientoKey" ColumnName="seguimientoKey" />
+                <ScalarProperty Name="latitud" ColumnName="latitud" />
+                <ScalarProperty Name="longitud" ColumnName="longitud" />
+                <ScalarProperty Name="fechaMovil" ColumnName="fechaMovil" />
+                <ScalarProperty Name="hora" ColumnName="hora" />
+                <ScalarProperty Name="minuto" ColumnName="minuto" />
+                <ScalarProperty Name="consecutivoMovil" ColumnName="consecutivoMovil" />
+                <ScalarProperty Name="vendedor" ColumnName="vendedor" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CoordenadasVentas">
+            <EntityTypeMapping TypeName="GestionRutasModel.CoordenadasVenta">
+              <MappingFragment StoreEntitySet="CoordenadasVentas">
+                <ScalarProperty Name="ventasKey" ColumnName="ventasKey" />
+                <ScalarProperty Name="latitud" ColumnName="latitud" />
+                <ScalarProperty Name="longitud" ColumnName="longitud" />
+                <ScalarProperty Name="fechaMovil" ColumnName="fechaMovil" />
+                <ScalarProperty Name="hora" ColumnName="hora" />
+                <ScalarProperty Name="minuto" ColumnName="minuto" />
+                <ScalarProperty Name="vendedor" ColumnName="vendedor" />
+                <ScalarProperty Name="cliente" ColumnName="cliente" />
+                <ScalarProperty Name="consecutivoMovil" ColumnName="consecutivoMovil" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VentanaHorarias">
+            <EntityTypeMapping TypeName="GestionRutasModel.VentanaHoraria">
+              <MappingFragment StoreEntitySet="VentanaHoraria">
+                <ScalarProperty Name="ventanaHorariaKey" ColumnName="ventanaHorariaKey" />
+                <ScalarProperty Name="fechaServidor" ColumnName="fechaServidor" />
+                <ScalarProperty Name="fechaInicio" ColumnName="fechaInicio" />
+                <ScalarProperty Name="fechaFin" ColumnName="fechaFin" />
+                <ScalarProperty Name="horaInicio" ColumnName="horaInicio" />
+                <ScalarProperty Name="minutoInicio" ColumnName="minutoInicio" />
+                <ScalarProperty Name="horaFin" ColumnName="horaFin" />
+                <ScalarProperty Name="minutoFin" ColumnName="minutoFin" />
+                <ScalarProperty Name="vendedor" ColumnName="vendedor" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

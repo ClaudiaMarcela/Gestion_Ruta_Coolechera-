@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Generated with http://android-holo-colors.com -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <style name="AutoCompleteTextViewThemeCoolechera" parent="android:Widget.Holo.Light.AutoCompleteTextView">
+      <item name="android:dropDownSelector">@drawable/themecoolechera_list_selector_holo_light</item>
+	    <item name="android:background">@drawable/themecoolechera_edit_text_holo_light</item>
+  </style>
+
+  <style name="ButtonThemeCoolechera" parent="android:Widget.Holo.Light.Button">
+	  <item name="android:background">@drawable/themecoolechera_btn_default_holo_light</item>
+  </style>
+
+  <style name="ImageButtonThemeCoolechera" parent="android:Widget.Holo.Light.ImageButton">
+	  <item name="android:background">@drawable/themecoolechera_btn_default_holo_light</item>
+  </style>
+
+  <style name="SpinnerThemeCoolechera" parent="android:Widget.Holo.Light.Spinner">
+      <item name="android:background">@drawable/themecoolechera_spinner_background_holo_light</item>
+      <item name="android:dropDownSelector">@drawable/themecoolechera_list_selector_holo_light</item>
+  </style>
+
+  <style name="ProgressBarThemeCoolechera" parent="android:Widget.Holo.Light.ProgressBar.Horizontal">
+      <item name="android:progressDrawable">@drawable/themecoolechera_progress_horizontal_holo_light</item>
+      <item name="android:indeterminateDrawable">@drawable/themecoolechera_progress_indeterminate_horizontal_holo_light</item>
+  </style>
+
+  <style name="SeekBarThemeCoolechera" parent="android:Widget.Holo.Light.SeekBar">
+      <item name="android:progressDrawable">@drawable/themecoolechera_scrubber_progress_horizontal_holo_light</item>
+      <item name="android:indeterminateDrawable">@drawable/themecoolechera_scrubber_progress_horizontal_holo_light</item>
+      <item name="android:thumb">@drawable/themecoolechera_scrubber_control_selector_holo_light</item>
+  </style>
+
+  <style name="RatingBarThemeCoolechera" parent="android:Widget.Holo.Light.RatingBar">
+      <item name="android:progressDrawable">@drawable/themecoolechera_ratingbar_full_holo_light</item>
+      <item name="android:indeterminateDrawable">@drawable/themecoolechera_ratingbar_full_holo_light</item>
+  </style>
+
+  <style name="RatingBarBigThemeCoolechera" parent="android:Widget.Holo.Light.RatingBar.Indicator">
+      <item name="android:progressDrawable">@drawable/themecoolechera_ratingbar_holo_light</item>
+      <item name="android:indeterminateDrawable">@drawable/themecoolechera_ratingbar_holo_light</item>
+  </style>
+
+  <style name="RatingBarSmallThemeCoolechera" parent="android:Widget.Holo.Light.RatingBar.Small">
+      <item name="android:progressDrawable">@drawable/themecoolechera_ratingbar_small_holo_light</item>
+      <item name="android:indeterminateDrawable">@drawable/themecoolechera_ratingbar_small_holo_light</item>
+  </style>
+
+  <style name="ToggleThemeCoolechera" parent="android:Widget.Holo.Light.Button.Toggle">
+      <item name="android:background">@drawable/themecoolechera_btn_toggle_holo_light</item>
+  </style>
+
+</resources>

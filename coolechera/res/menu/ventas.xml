@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.android.coolechera.VentasActivity" >
+
+    <item
+        android:id="@+id/action_Terminar"
+        android:orderInCategory="100"
+        android:title="@string/action_Terminar"
+        app:showAsAction="never"/>
+    
+    <item
+        android:id="@+id/action_No_Compra"
+        android:orderInCategory="100"
+        android:title="@string/action_No_Compra"
+        app:showAsAction="never"/>
+   
+    <item
+        android:id="@+id/action_Cancelar"
+        android:orderInCategory="100"
+        android:title="@string/action_Cencelar"
+        app:showAsAction="never"/>
+
+</menu>
