@@ -21,6 +21,7 @@ public partial class Login : System.Web.UI.Page
     {
         try
         {
+            
             String usuario = txtUsuario.Text;
             String clave = txtClave.Text;
             C04VENDEDORES vendedores = (from v in conexion.C04VENDEDORES
@@ -33,6 +34,5 @@ public partial class Login : System.Web.UI.Page
             String mensaje = ex.Message;
             throw;
         }
-
     }
 }
